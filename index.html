@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portafolio</title>
+    <link rel="stylesheet" href="./assets/style/style.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            
+            <nav id="nav">
+                <ul>
+                    <li><a href="#Home" onclick="seleccionar()">Home</a></li>
+                    <li><a href="#Acercademí" onclick="seleccionar()">Acerca de mí</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">Mis habilidades</a></li>
+                    <li><a href="#Experiencia" onclick="seleccionar()">Experiencia</a></li>
+                    <li><a href="#portafolio" onclick="seleccionar()">Mi portafolio</a></li>
+                    <li><a href="#Contacto" onclick="seleccionar()">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+    <!-- SECCION INICIO -->
+    <section id="Home" class="Home">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="./assets/img/foto de portafolio.jpeg" alt="">
+            </div>
+            <h1>Sebastian Franco</h1>
+            <h2>Creo, diseño y desarrollo para darle valor a tu proyecto</h2>
+            <div class="redes">
+                <a href="https://www.linkedin.com/in/sebastian-franco-coronado-875320237/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href=""><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+            </div>
+    </section>
+    <!-- SECCION BUZON -->
+    <section id="correos" class="correos">
+        <div class="contenido-correos">
+            <h3>¿Te gustaría colaborar juntos creando productos increíbles?</h3>
+            <form class="contenido-buzon">
+                <input type="text" placeholder="Deja tu correo aquí">
+                <button>¡Listos!</button>
+            </form>
+        </div>
+    </section>
+    <!-- ACERCA DE MI -->
+    <section id="Acercademí" class="Acercademí">
+        <div class="contenido-seccion">
+            <h2>Acerca de mí</h2>
+            <p><span>Hola soy Sebastián Franco </span>soy estudiante de Ingeniería de sistemas y full stack developer, con un gran interés en la tecnología y la innovación.
+                Con capacidad para aprender y aplicar mis conocimientos al ámbito profesional. En busca de
+                una oportunidad laboral en la que pueda desarrollar mis habilidades y adquirir experiencia. </p>
+        </div>
+        <div class="descargaCV">
+            <button>
+                <a href="https://1drv.ms/b/s!AnMKIITGg3Q8iG9DW6SdX0lW900O"><i class="fa-solid fa-download"></i> Descargar CV</a>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+    <!-- SECCION ESTUDIOS -->
+    <section id="estudios" class="estudios">
+        <div class="contenido-estudios">
+            <h2>Estudios</h2>
+           <div class="fila">
+            <div class="estudios">
+                <img src="./assets/img/logo_academlo.png" alt="">
+                <h4>Academlo</h4>
+                <p>2022-2023</p>
+                <p>Programa full stack</p>
+            </div>
+           </div>
+        </div>
+    </section>
+    <!-- SECCION HABILIDADES -->
+    <section id="skills" class="skills">
+        <div class="contenido-seccion">
+            <h2>Mis habilidades</h2>
+            <div class="fila">
+                <div class="col">
+                    <div class="skill">
+                        <span>JavaScript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>65%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Java</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Python</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>45%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- SECCION EXPERIENCIA -->
+    <section id="Experiencia" class="Experiencia">
+        <div class="contenido-seccion">
+            <h2>Experiencia</h2>
+            <div class="fila">
+                <div class="empresa">
+                    <img src="./assets/img/Wizeline.png" alt="">
+                    <p>Interactive 
+                        Desing
+                    </p>
+                    <p>6 meses</p>
+                </div>
+                <div class="empresa">
+                    <img src="./assets/img/Google.png" alt="">
+                    <p>Frontend and UI
+                        Dev
+                    </p>
+                    <p>6 meses</p>
+                </div>
+                <div class="empresa">
+                    <img src="./assets/img/Hootsuite.png" alt="">
+                    <p>Product 
+                        designer</p>
+                    <p>6 meses</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- MENU PORTAFILIO -->
+    <section id="portafolio" class="portafolio">
+        <div class="contenido-seccion">
+            <h2>Mi portafolio</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="./assets/img/Ejemplo2.png" alt="">
+                    <div class="overlay">
+                        <h3>Diseño creativo</h3>
+                        <p>Fotografia</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="./assets/img/Ejemplo 1.png" alt="">
+                    <div class="overlay">
+                        <h3>Diseño creativo</h3>
+                        <p>Fotografia</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="./assets/img/Ejemplo 4.png" alt="">
+                    <div class="overlay">
+                        <h3>Diseño creativo</h3>
+                        <p>Fotografia</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="./assets/img/Ejemplo 3.png" alt="">
+                    <div class="overlay">
+                        <h3>Diseño creativo</h3>
+                        <p>Fotografia</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- MENU CONCTACTO -->
+    <section id="Contacto" class="Contacto">
+        <div class="contenido-seccion">
+            <h2>Contacto</h2>
+            <div class="fila">
+                <div class="celular">
+                    <i class="fa-solid fa-phone"></i>
+                    <h4>Celular</h4>
+                    <p>+57 3227262307</p>
+                </div>
+                <div class="mail">
+                    <i class="fa-solid fa-envelope"></i>
+                    <h4>Correo</h4>
+                    <p>sebas18pet@gmail.com</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- MENU PIE DE PAGINA -->
+    <footer id="footer" class="footer">
+        <a href="#Home" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="contenido-seccion">
+            <h2>Sebastian Franco</h2>
+            <div class="Academlo">
+                <p>Hecho con <i class="fa-solid fa-heart"></i> en Academlo</p>
+            </div>
+        </div>
+    </footer>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
